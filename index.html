@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f5ef">
+  <meta name="description" content="With grateful hearts, Arolin Amose and Jenifer Joyal invite you to celebrate their wedding on December 14, 2026 at CSI Church, Aralvaimozhi.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Arolin & Jenifer — Wedding Invitation">
+  <meta property="og:description" content="Together with our families, we joyfully invite you to celebrate our wedding. December 14, 2026 · CSI Church, Aralvaimozhi.">
+  <meta property="og:image" content="assets/couple.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Arolin &amp; Jenifer — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar"><a class="monogram" href="#home" aria-label="Arolin and Jenifer home">A <span>♥</span> J</a><button class="music-toggle" id="musicToggle" aria-label="Play background music"><span class="music-icon">♫</span><span id="musicLabel">Play music</span></button></header>
+  <main>
+    <section class="hero" id="home" aria-label="Wedding invitation cover">
+      <div class="hero-image"></div><div class="hero-shade"></div>
+      <div class="hero-content">
+        <div class="cross-mark" aria-hidden="true"><span></span><i></i><b>✦</b></div>
+        <p class="eyebrow hero-eyebrow">TOGETHER WITH THEIR FAMILIES</p>
+        <p class="hero-invite">With grateful hearts before God,<br>we invite you to share in our joy</p>
+        <h1>Arolin <em>&amp;</em><br class="mobile-break"> Jenifer</h1>
+        <div class="hero-rule"><span></span> ♥ <span></span></div>
+        <p class="hero-date">14 <span>·</span> 12 <span>·</span> 2026</p>
+        <button class="open-invite" id="openInvite"><span>OPEN INVITATION</span><span class="open-arrow">↓</span></button>
+      </div>
+      <button class="scroll-cue" id="scrollCue" aria-label="Scroll to discover the invitation">SCROLL TO DISCOVER <span>↓</span></button>
+    </section>
+
+    <section class="welcome section-pad reveal" id="welcome">
+      <div class="section-kicker">A PROMISE BEFORE GOD</div>
+      <p class="scripture">“Therefore what God has joined together,<br class="desktop-break"> let no one separate.”</p>
+      <p class="scripture-ref">MATTHEW 19:6</p>
+      <div class="fine-cross" aria-hidden="true">✝</div>
+      <p class="welcome-copy">With the blessing of our families,<br>we begin our forever together.<br>It would mean the world to have you with us.</p>
+    </section>
+
+    <section class="couple reveal">
+      <div class="couple-photo"><img src="assets/couple.jpg" alt="Bride and groom holding a bouquet together" loading="lazy"><span class="photo-frame"></span></div>
+      <div class="couple-text"><div class="section-kicker">TWO HEARTS, ONE PROMISE</div><h2>Arolin <em>&amp;</em><br>Jenifer</h2><p>In faith, in love, and in the presence of those we hold dear.</p><div class="family-names" id="familyNames"></div></div>
+      <div class="side-caption">Arolin Amose &nbsp;·&nbsp; Jenifer Joyal</div>
+    </section>
+
+    <section class="date-section section-pad reveal" id="date">
+      <div class="section-kicker">SAVE THE DATE</div>
+      <h2>Our day is<br><em>almost here</em></h2>
+      <p class="scratch-hint" id="scratchHint">Gently rub the gold to reveal our wedding day</p>
+      <div class="scratch-card" id="scratchCard">
+        <div class="revealed-date"><span class="date-topline" id="dateTopline">MONDAY · DECEMBER</span><strong id="dateDay">14</strong><span class="date-year" id="dateYear">2026</span><span class="date-time" id="dateTime">CEREMONY AT 3:00 PM</span></div>
+        <canvas id="scratchCanvas" aria-label="Scratch to reveal the wedding date"></canvas>
+      </div>
+      <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+      <p class="date-note">Every lovely detail has been kept just for you.</p>
+    </section>
+
+    <section class="countdown-section reveal">
+      <video class="countdown-photo" autoplay muted loop playsinline preload="metadata" poster="assets/wedding-rings.jpg" aria-hidden="true"><source src="assets/rings.mp4" type="video/mp4"></video><div class="countdown-overlay"></div>
+      <div class="countdown-content"><div class="section-kicker light">COUNTING OUR BLESSINGS</div><h2>Until our<br><em>forever begins</em></h2><div class="countdown" id="countdown" aria-label="Countdown to the wedding"><div><strong id="days">—</strong><span>DAYS</span></div><i>:</i><div><strong id="hours">—</strong><span>HOURS</span></div><i>:</i><div><strong id="minutes">—</strong><span>MINUTES</span></div><i>:</i><div><strong id="seconds">—</strong><span>SECONDS</span></div></div></div>
+    </section>
+
+    <section class="venue section-pad reveal" id="venue">
+      <div class="section-kicker">THE SACRED CEREMONY</div><div class="venue-icon">✝</div>
+      <h2>A place of<br><em>faith &amp; promise</em></h2>
+      <div class="venue-card"><img src="assets/aralvaimozhi-church.jpg" alt="The illuminated CSI Church in Aralvaimozhi" loading="lazy"><div class="venue-card-text"><span>WEDDING CEREMONY</span><h3>CSI Church</h3><p>Aralvaimozhi</p><div class="venue-time">MONDAY, 14 DECEMBER 2026<br>3:00 – 4:00 PM</div><a class="map-button" id="weddingMap" href="https://share.google/bUIDdLxIayKKD1hfX" target="_blank" rel="noopener">WEDDING CHURCH DIRECTIONS <span>↗</span></a><a class="map-button reception-map" id="receptionMap" href="https://maps.app.goo.gl/ugiqvyNjLM4W5XDHA" target="_blank" rel="noopener">RECEPTION DIRECTIONS <span>↗</span></a></div></div>
+    </section>
+
+    <section class="closing reveal"><div class="closing-photo"></div><div class="closing-overlay"></div><div class="closing-content"><div class="closing-cross">✝</div><p>We can't wait to celebrate<br>this beautiful beginning with you.</p><div class="hero-rule"><span></span> ♥ <span></span></div><h2>Arolin <em>&amp;</em> Jenifer</h2><span class="closing-date">14 · 12 · 2026</span></div></section>
+  </main>
+  <footer><span>MADE WITH LOVE &amp; GRATITUDE</span><span>AROLIN &amp; JENIFER · 2026</span></footer>
+  <audio id="bgMusic" src="assets/bgm-theri.mpeg" loop preload="none" autoplay></audio>
+  <script src="script.js"></script>
+</body>
+</html>
